@@ -32,12 +32,6 @@ axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
     })
 
 
-// Grab parent element
-// const cards = document.querySelector('.cards-container');
-
-// Append (Loop through data)
-// cards.appendChild(createCard(getCard));
-
 // Component function
 function createCard(getInfo) {
 
@@ -62,14 +56,12 @@ function createCard(getInfo) {
     author.classList.add('author');
     imgCont.classList.add('img-container');
 
-    // console.log(getInfo);
 
     // Content
 
     headlineDiv.textContent = getInfo.headline;
     img.src = getInfo.authorPhoto;
     authorName.textContent = getInfo.authorName;
-
 
 
     return card;
